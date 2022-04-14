@@ -7,7 +7,7 @@ let forecastBaseEndpoint =
   "https://api.openweathermap.org/data/2.5/forecast?units=metric&appid=" +
   weatherAPIKey;
 let geocodingBaseEndpoint =
-  "http://api.openweathermap.org/geo/1.0/direct?limit=5&appid=" +
+  "https://api.openweathermap.org/geo/1.0/direct?limit=5&appid=" +
   weatherAPIKey +
   "&q=";
 let searchInp = document.querySelector(".weather_search");
@@ -162,7 +162,7 @@ let updateForecast = (forecast) => {
   let forecastItem = "";
   forecast.forEach((day) => {
     let iconUrl =
-      "http://openweathermap.org/img/wn/" + day.weather[0].icon + "@2x.png";
+      "https://openweathermap.org/img/wn/" + day.weather[0].icon + "@2x.png";
     let temperature =
       day.main.temp > 0
         ? "+" + Math.round(day.main.temp)
@@ -195,7 +195,7 @@ window.onload = function show() {
   lng = crd.longitude.toString();
   console.log(lat + "  " + lng);
   currentLocation =
-  "http://api.openweathermap.org/data/2.5/forecast?lat=" +
+  "https://api.openweathermap.org/data/2.5/forecast?lat=" +
   lat +
   "&lon=" +
   lng +

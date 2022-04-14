@@ -65,15 +65,15 @@ body{
 }
 
 .weather_indicator--humidity::before {
-    background-image: url(../images/humidity.png);
+    background-image: url(./humidity.png);
 }
 
 .weather_indicator--wind::before {
-    background-image: url(../images/wind.png);
+    background-image: url(./wind.png);
 }
 
 .weather_indicator--pressure::before {
-    background-image: url(../images/pressure.png);
+    background-image: url(./pressure.png);
 }
 
 .weather_temperature{
